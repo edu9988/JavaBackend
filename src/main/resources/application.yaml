@@ -4,7 +4,7 @@ server:
 spring:
         datasource:
                 url: jdbc:postgresql://dpg-cpf3itbtg9os73b72a1g-a/db4java_2lm8
-                username: postgres
+                username: jose
                 password: ${DB_PW}
                 driver-class-name: org.postgresql.Driver
                 initialize: true
