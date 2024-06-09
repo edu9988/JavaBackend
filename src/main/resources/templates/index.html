@@ -1,0 +1,37 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{css/main.css}" />
+    <link rel="icon" type="image/png" th:href="@{lock_icon.png}">
+    <title>Nameless | Home</title>
+</head>
+
+<body>
+
+<header>
+    <nav>
+    <a th:href="@{/login}">Login</a>
+    <a th:href="@{/signup}">Sign up</a>
+    <a th:href="@{/list}">Users</a>
+    <a th:href="@{/hash}">Hashed version</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Welcome</h1>
+    <h2>
+	<a th:href="@{/login}">Login</a>
+    </h2>
+    <h2>
+	<a th:href="@{/signup}">Sign up</a>
+    </h2>
+</main>
+
+<footer>
+    <p>&#169 2024</p>
+</footer>
+
+</body>
+</html>

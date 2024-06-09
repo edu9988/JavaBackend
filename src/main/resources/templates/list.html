@@ -1,0 +1,57 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{css/main.css}" />
+    <link rel="icon" type="image/png" th:href="@{lock_icon.png}">
+    <title>Nameless | User list</title>
+</head>
+
+<body>
+
+<header>
+    <nav>
+    <a th:href="@{/login}">Login</a>
+    <a th:href="@{/signup}">Sign up</a>
+    <span>Users</span>
+    <a th:href="@{/hash}">Hashed version</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Users</h1>
+    <table>
+	<thead>
+	    <tr>
+		<td>Id</td>
+		<td>Name</td>
+		<td>Password</td>
+		<td></td>
+		<td></td>
+	    </tr>
+	</thead>
+	<tbody>
+	    <tr th:each="u : ${list}">
+		<td th:text="${u.uid}"></td>
+		<td th:text="${u.uname}"></td>
+		<td th:text="${u.pwd}"></td>
+		<td>
+		    <a th:href="@{'edit/'+${u.uid}}">Change Password</a>
+		</td>
+		<td>
+		    <form action="#" th:action="@{'/delete/'+${u.uid}}" method="post">
+			<input type="submit" value="Delete">
+		    </form>
+		</td>
+	    </tr>
+	</tbody>
+    </table>
+</main>
+
+<footer>
+    <p>&#169 2024</p>
+</footer>
+
+</body>
+</html>
