@@ -1,7 +1,7 @@
 window.onload = () => {
     const p = document.getElementById( "pwd" );
 
-    const b = document.querySelector("form>p>button");
+    const b = document.querySelector("form>p>span");
 
     b.onclick = e => {
 	e.preventDefault();

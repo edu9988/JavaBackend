@@ -7,7 +7,7 @@ form > p  {
     display: inline-block;
 }
 
-form > p > button {
+form > p > span {
     position: absolute;
     right: 10px;
     transform: translateY(20%);
@@ -16,6 +16,7 @@ form > p > button {
     padding: 0;
     border: none;
     color: magenta;
+    font-size: 12px;
 }
 
 td > form {

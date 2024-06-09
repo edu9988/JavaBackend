@@ -16,7 +16,7 @@ window.onload = () => {
 	    rp.setCustomValidity( "Passwords don't match" );
     }
 
-    const ls = document.querySelectorAll("form>p>button");
+    const ls = document.querySelectorAll("form>p>span");
 
     ls[0].onclick = e => {
 	e.preventDefault();
