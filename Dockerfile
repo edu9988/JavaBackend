@@ -10,7 +10,7 @@ COPY mvnw .
 
 COPY .mvn .mvn
 
-RUN chmod a+x mvnw
+RUN chmod 777 mvnw
 
 RUN ./mvnw package
 
