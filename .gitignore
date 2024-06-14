@@ -1,6 +1,4 @@
 application-local.yaml
-src/main/java/com/project/nameless/config
-src/main/java/com/project/nameless/config/DotenvConfig.java
 .env
 HELP.md
 target/
